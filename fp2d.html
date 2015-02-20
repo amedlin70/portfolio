@@ -1,0 +1,97 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Load css, js is loaded at end of page -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<!--  Site Header -->
+
+			<!--  Navigation -->
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="./index.html">Andrew Medlin</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li><a href="./index.html">Home</a></li>
+			        <li class="dropdown active">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li class="active"><a href="./fp2d.html">FP2D</a></li>
+			            <li><a href="./subdivision.html">Catmull-Clark Subdivision</a></li>
+			            <li><a href="./focusStacking.html">Focus Stacking</a></li>
+			            <li><a href="./chess.html">Chess</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="./hobbies.html">Hobbies</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+
+
+			<!--  Main content -->
+			<h2>FP2D</h2>
+			<div class="pull-right">
+				<img src="./images/fp2d.png" class="img-responsive">
+			</div>
+			<p>
+				This is a project the I worked on during my Senior year at the University of Illinois along with 9 other students.  It is a web based application for Professor Nakamura in the Department of Food Science and Human Nutrition.  It was developed with the goal of allowing dietitians to help their clients better understand their fiber and protein intake per Calorie in order to form healthier eating habits.  
+			</p>
+			<p>
+				This application has 3 sets of users.  The administrator is capable of adding dieticians to the database, as well as updating the applications copy of the USDA database.  The dieticians are capable of adding clients, as well as viewing their clients food intake information.  The clients are able to log in and enter the foods that they consumed that day.  This information is stored in a database and displayed in a graphical representation allowing them to quickly see which foods are healthy or not healthy for them.  Using all this information the dieticians are able to set goals for their clients to help them with weight loss goals.
+			</p>
+			<p>
+				We used multiple technologies to build this application.  The backend is written in Ruby on Rails which allowed us to authenticate our users and to block access to any portion of the application that the user shouldn't have access to.  The main graph was written using jQuery and jqPlot.  All database queries were made using AJAX.  This project allowed me the opportunity to see how multiple technologies can be used together to create extensive applications.
+			</p>
+			<div class="row">
+				<div class="col-xs-6 col-md-3">
+			    	<a href="./images/ControllerDiagram.png" class="thumbnail">
+			      		<img src="./images/ControllerDiagram.png" alt="Controller Diagram">
+			    	</a>
+			    	<div class="caption">
+			        	<h4>Controller Diagram</h4>
+					</div>
+				</div>
+			  	<div class="col-xs-6 col-md-3">
+			    	<a href="./images/ModelDiagram.png" class="thumbnail">
+			      		<img src="./images/ModelDiagram.png" alt="Model Diagram">
+			    	</a>
+			    	<div class="caption">
+			        	<h4>Model Diagram</h4>
+					</div>
+				</div>
+			</div>
+			<p>
+				Project source unavailable.
+			</p>
+
+
+			<!--  Footer -->
+
+
+		</div> <!-- container -->
+
+
+		<!--  Load Javascript at end for faster load time -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+

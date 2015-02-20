@@ -1,0 +1,121 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<!-- Load css, js is loaded at end of page -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<!--  Site Header -->
+
+			<!--  Navigation -->
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="./index.html">Andrew Medlin</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li class="active"><a href="./index.html">Home</a></li>
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li><a href="./fp2d.html">FP2D</a></li>
+			            <li><a href="./subdivision.html">Catmull-Clark Subdivision</a></li>
+			            <li><a href="./focusStacking.html">Focus Stacking</a></li>
+			            <li><a href="./chess.html">Chess</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="./about.html">About</a></li>
+			        <li><a href="./hobbies.html">Hobbies</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+
+
+			<!--  Main content -->
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><a href="./fp2d.html">FP2D</a></h3>
+			  </div>
+			  <div class="panel-body">
+			    <div class="pull-left">
+			    	<img src="./images/fp2d_thumb.png" class="img-rounded img-responsive" width:"200" height:"200">
+			    </div>
+			    <p>
+			    	Look up foods, plot their nutritional values, and make your diet plan.
+			    </p>
+			    <p>
+			    	This web application was designed for Professor Nakamura of the Department of Food Science and Human Nutrition in order to help clients keep track of food intake to maintain a healthy lifestyle.
+			    </p>
+			  </div>
+			</div>
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><a href="./subdivision.html">Catmull-Clark Subdivision</a></h3>
+			  </div>
+			  <div class="panel-body">
+			  	<div class="pull-right">
+			    	<img src="./images/sub_i_thumb.png" class="img-rounded img-responsive">
+			    </div>
+			    <p>
+			    	An OpenGL version of the Catmull-Clark Subdivision algorithm.  Written in C++.  
+			    </p>
+			  </div>
+			</div>
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><a href="focusStacking.html">Focus Stacking</a></h3>
+			  </div>
+			  <div class="panel-body">
+			  	<div class="pull-left">
+				  	<img src="./images/circuit_thumb.jpg" class="img-rounded img-responsive">
+				  </div>
+					<p>	
+						A focal stacking algorithm which takes multiple images with differing depth of field and creates a composite in which the entire image is in focus.  Written in Matlab.
+					</p>
+			  </div>
+			</div>
+
+			<div class="panel panel-default">
+			  <div class="panel-heading">
+			    <h3 class="panel-title"><a href="./chess.html">Chess</a></h3>
+			  </div>
+			  <div class="panel-body">
+			  	<div class="pull-right">
+				  	<img src="./images/chess_thumb.png" class="img-rounded img-responsive">
+				  </div>
+			  	<p>
+			    	A fully functional chess program where 2 players can play either on the same screen or through a network connection.  Written in Java.
+			    </p>
+			  </div>
+			</div>
+
+			<!--  Footer -->
+
+
+		</div> <!-- container -->
+
+
+		<!--  Load Javascript at end for faster load time -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
