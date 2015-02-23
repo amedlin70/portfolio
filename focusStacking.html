@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
 	</head>
 
 	<body>
@@ -52,32 +53,32 @@
 			<p><h3>Original Images</h3></p>
 			<div class="row">
 			  	<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_1.JPG" class="thumbnail">
+			    	<a href="./images/circuit_1.JPG" class="thumbnail image-popup-no-margins">
 			      		<img src="./images/circuit_1.JPG" alt="Image 1">
 			    	</a>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_2.JPG" class="thumbnail">
+			    	<a href="./images/circuit_2.JPG" class="thumbnail image-popup-no-margins">
 			      		<img src="./images/circuit_2.JPG" alt="Image 2">
 			    	</a>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_3.JPG" class="thumbnail">
+			    	<a href="./images/circuit_3.JPG" class="thumbnail image-popup-no-margins">
 			      		<img src="./images/circuit_3.JPG" alt="Image 3">
 			    	</a>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_4.JPG" class="thumbnail">
+			    	<a href="./images/circuit_4.JPG" class="thumbnail image-popup-no-margins">
 			      		<img src="./images/circuit_4.JPG" alt="Image 4">
 			    	</a>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_5.JPG" class="thumbnail">
+			    	<a href="./images/circuit_5.JPG" class="thumbnail image-popup-no-margins">
 			      		<img src="./images/circuit_5.JPG" alt="Image 5">
 			    	</a>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_6.JPG" class="thumbnail">
+			    	<a href="./images/circuit_6.JPG" class="thumbnail image-popup-no-margins">
 			      		<img src="./images/circuit_6.JPG" alt="Image 6">
 			    	</a>
 				</div>
@@ -85,7 +86,7 @@
 			<p><h3>Results</h3></p>
 			<div class="row">
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_gradient.jpg" class="thumbnail">
+			    	<a href="./images/circuit_gradient.jpg" class="thumbnail image-popup-no-margins" title="Gradient Result">
 			      		<img src="./images/circuit_gradient.jpg" alt="HvS">
 			    	</a>
 			    	<div class="caption">
@@ -93,7 +94,7 @@
 					</div>
 				</div>
 			  	<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_HvS.jpg" class="thumbnail">
+			    	<a href="./images/circuit_HvS.jpg" class="thumbnail image-popup-no-margins" title="HvS Result">
 			      		<img src="./images/circuit_HvS.jpg" alt="HvS">
 			    	</a>
 			    	<div class="caption">
@@ -101,7 +102,7 @@
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_majority.jpg" class="thumbnail">
+			    	<a href="./images/circuit_majority.jpg" class="thumbnail image-popup-no-margins" title="Majority Result">
 			      		<img src="./images/circuit_majority.jpg" alt="Image 2">
 			    	</a>
 			    	<div class="caption">
@@ -109,7 +110,7 @@
 					</div>
 				</div>
 				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_photoshop.jpg" class="thumbnail">
+			    	<a href="./images/circuit_photoshop.jpg" class="thumbnail image-popup-no-margins" title="Photoshop CS5 Result">
 			      		<img src="./images/circuit_photoshop.jpg" alt="Image 3">
 			    	</a>
 			    	<div class="caption">
@@ -134,6 +135,27 @@
 		<!--  Load Javascript at end for faster load time -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+
+		<script type="text/javascript">
+		    $(document).ready(function() {
+		        $('.image-popup-no-margins').magnificPopup({
+			        type: 'image',
+			        closeOnContentClick: true,
+			        closeBtnInside: false,
+			        fixedContentPos: true,
+			        mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+			        image: {
+			        	verticalFit: true
+			        },
+			        zoom: {
+			        	enabled: true,
+			        	duration: 300 // don't foget to change the duration also in CSS
+			        }
+		        });
+		    });
+		    
+	    </script>
 	</body>
 </html>
 
