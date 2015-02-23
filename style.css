@@ -1,11 +1,18 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-image: url("./images/concrete_seamless.png");
+  padding-top: 70px;
 }
 
 .navbar {
   margin-bottom: 20px;
 }
+
+/* Overide Bootstrap */
+.container {
+	padding-right: 50px;
+  	padding-left: 50px;
+}
+
 
 /* padding-bottom and top for image */
 .mfp-no-margins img.mfp-img {

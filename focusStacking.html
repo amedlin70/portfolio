@@ -9,127 +9,125 @@
 	</head>
 
 	<body>
+		<!--  Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="./index.html">Andrew Medlin</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		      	<li><a href="./index.html">Home</a></li>
+		        <li class="dropdown active">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="./fp2d.html">FP2D</a></li>
+		            <li><a href="./subdivision.html">Catmull-Clark Subdivision</a></li>
+		            <li class="active"><a href="./focusStacking.html">Focus Stacking</a></li>
+		            <li><a href="./chess.html">Chess</a></li>
+		          </ul>
+		        </li>
+		        <li><a href="./hobbies.html">Hobbies</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+
+		<!--  Main content -->
 		<div class="container">
-			<!--  Site Header -->
-
-			<!--  Navigation -->
-			<nav class="navbar navbar-default">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="./index.html">Andrew Medlin</a>
-			    </div>
-
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav navbar-right">
-			      	<li><a href="./index.html">Home</a></li>
-			        <li class="dropdown active">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects <span class="caret"></span></a>
-			          <ul class="dropdown-menu" role="menu">
-			            <li><a href="./fp2d.html">FP2D</a></li>
-			            <li><a href="./subdivision.html">Catmull-Clark Subdivision</a></li>
-			            <li class="active"><a href="./focusStacking.html">Focus Stacking</a></li>
-			            <li><a href="./chess.html">Chess</a></li>
-			          </ul>
-			        </li>
-			        <li><a href="./hobbies.html">Hobbies</a></li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-
-
-			<!--  Main content -->
-			<h2>Focus Stacking Algorithm</h2>
-			<p> For this project I began with a group of images which only differed by the area that is in focus.  I then loaded them into my program and calculated the infocus portions of each layer.  Using the results of this process I was able to rebuild the image with a much greater depth of field than any of the images provided by themselves.
-			</p>
-			<p><h3>Original Images</h3></p>
-			<div class="row">
-			  	<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_1.JPG" class="thumbnail image-popup-no-margins">
-			      		<img src="./images/circuit_1.JPG" alt="Image 1">
-			    	</a>
+			<div class="well">
+				<h2>Focus Stacking Algorithm</h2>
+				<p> For this project I began with a group of images which only differed by the area that is in focus.  I then loaded them into my program and calculated the infocus portions of each layer.  Using the results of this process I was able to rebuild the image with a much greater depth of field than any of the images provided by themselves.
+				</p>
+				<p><h3>Original Images</h3></p>
+				<div class="row">
+				  	<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_1.JPG" class="thumbnail image-popup-no-margins">
+				      		<img src="./images/circuit_1.JPG" alt="Image 1">
+				    	</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_2.JPG" class="thumbnail image-popup-no-margins">
+				      		<img src="./images/circuit_2.JPG" alt="Image 2">
+				    	</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_3.JPG" class="thumbnail image-popup-no-margins">
+				      		<img src="./images/circuit_3.JPG" alt="Image 3">
+				    	</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_4.JPG" class="thumbnail image-popup-no-margins">
+				      		<img src="./images/circuit_4.JPG" alt="Image 4">
+				    	</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_5.JPG" class="thumbnail image-popup-no-margins">
+				      		<img src="./images/circuit_5.JPG" alt="Image 5">
+				    	</a>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_6.JPG" class="thumbnail image-popup-no-margins">
+				      		<img src="./images/circuit_6.JPG" alt="Image 6">
+				    	</a>
+					</div>
 				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_2.JPG" class="thumbnail image-popup-no-margins">
-			      		<img src="./images/circuit_2.JPG" alt="Image 2">
-			    	</a>
+				<p><h3>Results</h3></p>
+				<div class="row">
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_gradient.jpg" class="thumbnail image-popup-no-margins" title="Gradient Result">
+				      		<img src="./images/circuit_gradient.jpg" alt="HvS">
+				    	</a>
+				    	<div class="caption">
+				        	<h4>Gradient</h4>
+						</div>
+					</div>
+				  	<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_HvS.jpg" class="thumbnail image-popup-no-margins" title="HvS Result">
+				      		<img src="./images/circuit_HvS.jpg" alt="HvS">
+				    	</a>
+				    	<div class="caption">
+				        	<h4>HvS</h4>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_majority.jpg" class="thumbnail image-popup-no-margins" title="Majority Result">
+				      		<img src="./images/circuit_majority.jpg" alt="Image 2">
+				    	</a>
+				    	<div class="caption">
+				        	<h4>Majority</h4>
+						</div>
+					</div>
+					<div class="col-xs-6 col-md-3">
+				    	<a href="./images/circuit_photoshop.jpg" class="thumbnail image-popup-no-margins" title="Photoshop CS5 Result">
+				      		<img src="./images/circuit_photoshop.jpg" alt="Image 3">
+				    	</a>
+				    	<div class="caption">
+				        	<h4>Photoshop CS5</h4>
+						</div>
+					</div>
 				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_3.JPG" class="thumbnail image-popup-no-margins">
-			      		<img src="./images/circuit_3.JPG" alt="Image 3">
-			    	</a>
-				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_4.JPG" class="thumbnail image-popup-no-margins">
-			      		<img src="./images/circuit_4.JPG" alt="Image 4">
-			    	</a>
-				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_5.JPG" class="thumbnail image-popup-no-margins">
-			      		<img src="./images/circuit_5.JPG" alt="Image 5">
-			    	</a>
-				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_6.JPG" class="thumbnail image-popup-no-margins">
-			      		<img src="./images/circuit_6.JPG" alt="Image 6">
-			    	</a>
-				</div>
+				<p>
+					Depending on the algorithm used to combine the picture gave a considerable difference in results.  The Gradient approach (fig. 1) of picking the most sharpest pixel from each image and writing it to the output image was the simplest but gave the worst results.  More complicated algorithms such as (fig. 2) and (fig. 3) looked at the surrounding pixels and averaged them out which gave much better results, but they still were not as good as Adobe Photoshops' results (fig. 4).
+				</p>
+				<p>
+					Project <a href="./focus_stacking.zip">source</a>
+				</p>
 			</div>
-			<p><h3>Results</h3></p>
-			<div class="row">
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_gradient.jpg" class="thumbnail image-popup-no-margins" title="Gradient Result">
-			      		<img src="./images/circuit_gradient.jpg" alt="HvS">
-			    	</a>
-			    	<div class="caption">
-			        	<h4>Gradient</h4>
-					</div>
-				</div>
-			  	<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_HvS.jpg" class="thumbnail image-popup-no-margins" title="HvS Result">
-			      		<img src="./images/circuit_HvS.jpg" alt="HvS">
-			    	</a>
-			    	<div class="caption">
-			        	<h4>HvS</h4>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_majority.jpg" class="thumbnail image-popup-no-margins" title="Majority Result">
-			      		<img src="./images/circuit_majority.jpg" alt="Image 2">
-			    	</a>
-			    	<div class="caption">
-			        	<h4>Majority</h4>
-					</div>
-				</div>
-				<div class="col-xs-6 col-md-3">
-			    	<a href="./images/circuit_photoshop.jpg" class="thumbnail image-popup-no-margins" title="Photoshop CS5 Result">
-			      		<img src="./images/circuit_photoshop.jpg" alt="Image 3">
-			    	</a>
-			    	<div class="caption">
-			        	<h4>Photoshop CS5</h4>
-					</div>
-				</div>
-			</div>
-			<p>
-				Depending on the algorithm used to combine the picture gave a considerable difference in results.  The Gradient approach (fig. 1) of picking the most sharpest pixel from each image and writing it to the output image was the simplest but gave the worst results.  More complicated algorithms such as (fig. 2) and (fig. 3) looked at the surrounding pixels and averaged them out which gave much better results, but they still were not as good as Adobe Photoshops' results (fig. 4).
-			</p>
-			<p>
-				Project <a href="./focus_stacking.zip">source</a>
-			</p>
-
-
-			<!--  Footer -->
-
-
 		</div> <!-- container -->
+
+
+		<!--  Footer -->
 
 
 		<!--  Load Javascript at end for faster load time -->
