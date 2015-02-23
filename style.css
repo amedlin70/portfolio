@@ -1,6 +1,7 @@
 body {
   background-image: url("./images/concrete_seamless.png");
   padding-top: 70px;
+  padding-bottom: 0px;
 }
 
 .navbar {
@@ -11,6 +12,13 @@ body {
 .container {
 	padding-right: 50px;
   	padding-left: 50px;
+}
+
+.well.well-footer {
+	background:#333; 
+	color:#9d9d9d; 
+	margin-bottom:0px;
+	text-align: right;
 }
 
 
