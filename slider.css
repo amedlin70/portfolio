@@ -4,6 +4,7 @@
 	height: 400px;
 	overflow: hidden;
 	z-index: 1000;
+	margin-bottom: 20px;
 }
 
 #slider .slides {

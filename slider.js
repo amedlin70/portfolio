@@ -31,11 +31,17 @@ $(function() {
 		clearInterval(interval);
 	}
 	
-	function updateBottomCounter() {
+	function removeBottomCounterElement() {
 		// Remove active class from previous item
 		var $curElement = $('.active', $bottomCounter);
 		$curElement.removeClass("active");
 		$curElement.addClass("not-active");
+
+	}
+
+	function updateBottomCounter() {
+		// Remove current markers in case clicked multiple times
+		removeBottomCounterElement();
 
 		// Add active class to new current item
 		$curElement = $('#slider-bullet'+currentSlide);
@@ -45,6 +51,7 @@ $(function() {
 
 	function updateSlider(slideDirection) {
 		var currentOffset = slideDirection * width;
+		removeBottomCounterElement();
 		$slideContainer.animate({'margin-left': '-='+currentOffset}, animationSpeed, function() {
 			currentSlide += slideDirection;
 			// Slide right
