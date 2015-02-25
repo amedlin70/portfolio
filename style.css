@@ -112,6 +112,19 @@ body {
   background-color: #BBDDFF;
 }
 
+.thumbnail img:hover {
+	transform: scale(1.1);
+}
+
+.thumbnail img {
+	transition: all 0.3s ease 0s;
+	width: 100%;
+}
+
+.thumbnail {
+	overflow: hidden;
+}
+
 /*** Overide Magnific ***/
 /* padding-bottom and top for image */
 .mfp-no-margins img.mfp-img {
