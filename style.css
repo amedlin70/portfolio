@@ -30,7 +30,6 @@ body {
 	margin-top: 10px;
 }
 
-
 .navbar-default {
 	background-color: #2C3E50;
 	border-color: #FFFFFF;
@@ -91,7 +90,27 @@ body {
 	}
 }
 
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+		background-color: #1A242F;
+		color: #BBDDFF;
+	}
+}
 
+.navbar-default .navbar-toggle {
+	border-color: #BBDDFF;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1A242F;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #BBDDFF;
+}
 
 /*** Overide Magnific ***/
 /* padding-bottom and top for image */
