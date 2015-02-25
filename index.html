@@ -104,9 +104,12 @@
 		<!-- Load Navigation -->
 		<script> 
 			$(function() {
-				$("#site-nav").load("nav.html");
+				$("#site-nav").load("nav.html", function() {
+					$("#home").addClass('active');
+				});
 			});
 		</script>
+
 		<!-- Load Footer -->
 		<script> 
 			$(function() {

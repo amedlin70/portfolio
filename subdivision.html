@@ -10,7 +10,7 @@
 	<body>
 		<!--  Navigation -->
 		<nav id="site-nav"></nav>
-		
+
 		<div class="container">
 			<div class="well">
 				<!--  Main content -->
@@ -88,9 +88,13 @@
 		<!-- Load Navigation -->
 		<script> 
 			$(function() {
-				$("#site-nav").load("nav.html");
+				$("#site-nav").load("nav.html", function() {
+					$("#proj2").addClass('active');
+					$("#projects").addClass('active');
+				});
 			});
 		</script>
+
 		<!-- Load Footer -->
 		<script> 
 			$(function() {

@@ -63,9 +63,14 @@
 		<!-- Load Navigation -->
 		<script> 
 			$(function() {
-				$("#site-nav").load("nav.html");
+				$("#site-nav").load("nav.html", function() {
+					$("#proj1").addClass('active');
+					$("#projects").addClass('active');
+				});
 			});
 		</script>
+
+
 		<!-- Load Footer -->
 		<script> 
 			$(function() {

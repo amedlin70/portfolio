@@ -108,9 +108,13 @@
 		<!-- Load Navigation -->
 		<script> 
 			$(function() {
-				$("#site-nav").load("nav.html");
+				$("#site-nav").load("nav.html", function() {
+					$("#proj3").addClass('active');
+					$("#projects").addClass('active');
+				});
 			});
 		</script>
+
 		<!-- Load Footer -->
 		<script> 
 			$(function() {
