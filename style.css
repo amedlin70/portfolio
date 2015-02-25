@@ -78,6 +78,20 @@ body {
 	color: #BBDDFF;
 }
 
+@media (max-width: 767px){
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+		color: #BBDDFF;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+		color: #FBB117;
+	}
+}
+
+
 
 /*** Overide Magnific ***/
 /* padding-bottom and top for image */
